@@ -1,0 +1,100 @@
+python train.py \
+-s /home/roar/playroom/ \
+--iterations 20000 \
+--checkpoint_iterations 20000
+
+
+python render.py --source /home/roar/Desktop/playroom_split                  --model_path /home/roar/gaussian-splatting/output/playroom_split_results/
+python render_cus.py --model_path /home/roar/gaussian-splatting/output/playroom_test/ --iteration 20000 --pose /home/roar/Desktop/guessed_pose.json
+
+colmap feature_extractor \
+    --database_path database.db \
+    --image_path /home/roar/Desktop/nm/images \
+    --ImageReader.single_camera 1
+
+colmap exhaustive_matcher \
+    --database_path database.db
+
+mkdir /home/roar/Desktop/nm/sparse
+
+colmap mapper \
+    --database_path database.db \
+    --image_path /home/roar/Desktop/nm/images \
+    --output_path /home/roar/Desktop/nm/sparse
+
+
+
+
+colmap model_converter \
+    --input_path /home/roar/Desktop/nm/sparse/0 \
+    --output_path /home/roar/Desktop/nm/sparse/0 \
+    --output_type TXT
+
+
+
+
+
+colmap image_undistorter \
+    --image_path /home/roar/Desktop/nm/images \
+    --input_path /home/roar/Desktop/nm/sparse/0 \
+    --output_path /home/roar/Desktop/nm/undistorted \
+    --output_type COLMAP
+
+python render_cus.py --model_path /home/roar/gaussian-splatting/output/holo_3_test/ --iteration 30000 --pose /home/roar/Desktop/guessed_pose.json
+
+
+colmap feature_extractor \
+    --database_path /home/roar/Desktop/holo900/database.db \
+    --image_path /home/roar/Desktop/holo900/images \
+    --ImageReader.single_camera 1
+
+# Step 2: Feature matching
+colmap exhaustive_matcher \
+    --database_path /home/roar/Desktop/holo900/database.db
+
+# Step 3: Mapping (structure from motion)
+mkdir -p /home/roar/Desktop/holo900/sparse
+colmap mapper \
+    --database_path /home/roar/Desktop/holo900/database.db \
+    --image_path /home/roar/Desktop/holo900/images \
+    --output_path /home/roar/Desktop/holo900/sparse
+
+    
+    
+colmap model_converter \
+    --input_path /home/roar/Desktop/holo6/sparse/0 \
+    --output_path /home/roar/Desktop/holo6/sparse/0 \
+    --output_type TXT
+    
+    
+    
+colmap image_undistorter \
+    --image_path /home/roar/Desktop/holo6/images \
+    --input_path /home/roar/Desktop/holo6/sparse/0 \
+    --output_path /home/roar/Desktop/holo6/undistorted \
+    --output_type COLMAP
+
+
+colmap model_converter \
+    --input_path /home/roar/Desktop/holo6/undistorted/sparse \
+    --output_path /home/roar/Desktop/holo6/undistorted/sparse \
+    --output_type TXT
+    
+python /home/roar/gaussian-splatting/SIBR_viewers/src/projects/dataset_tools/preprocess/fullColmapProcess/colmap2nerf.py \
+  --text /home/roar/Desktop/holo6/sparse/0 \
+  --images /home/roar/Desktop/holo6/undistorted/images \
+  --out /home/roar/Desktop/holo6/transforms.json \
+  --aabb_scale 16
+
+    
+    
+python train.py -s /home/roar/Desktop/holo5 --iterations 20000
+
+python render.py --source /home/roar/Desktop/holo4                  --model_path /home/roar/gaussian-splatting/output/holo_n/
+
+
+
+   
+    
+    
+ 
