@@ -14,11 +14,11 @@ We propose a novel active perception pipeline that quantifies both epistemic and
 
 ### 3DGS Based Pose Estimation
 
-<img width="712" height="506" alt="pose_est" src="https://github.com/user-attachments/assets/75ac0b48-7da2-45e9-9395-65571a6c6f98" />
+<img width="400" alt="pose_est" src="https://github.com/user-attachments/assets/75ac0b48-7da2-45e9-9395-65571a6c6f98" />
 
 ### Pose-wise Uncertainty Quantification
 
-<img width="794" height="526" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
+<img width="400" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
 
 
 ### 🎯 Applications
