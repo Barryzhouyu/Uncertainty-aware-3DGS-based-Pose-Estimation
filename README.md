@@ -7,7 +7,7 @@ This project explores uncertainty-aware active perception for robot using 3D Gau
 •	    Simulation and validation in simulator and real-world environment
 
 ### Applications
-•	    Uncertainty-aware robotic navigation
+•	    Uncertainty-aware pose estimation
 •	    Active data collection under limited sensing
 
 
