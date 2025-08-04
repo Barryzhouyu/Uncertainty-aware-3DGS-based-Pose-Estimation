@@ -12,13 +12,13 @@ This repository contains the implementation for our paper:
 
 We propose a novel active perception pipeline that quantifies both epistemic and aleatoric uncertainty in 3D Gaussian Splatting (3DGS)-based pose estimation and leverages them for uncertainty-aware path planning in robot navigation. Unlike prior 3DGS methods that focus on rendering or localization alone, our approach enables robots to identify informative viewpoints for re-observation—without requiring real-time localization.
 
-### 3DGS Based Pose Estimation
+#### Pose-wise Uncertainty Quantification
+
+<img width="600" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
+
+#### 3DGS Based Pose Estimation
 
 <img width="400" alt="pose_est" src="https://github.com/user-attachments/assets/75ac0b48-7da2-45e9-9395-65571a6c6f98" />
-
-### Pose-wise Uncertainty Quantification
-
-<img width="400" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
 
 
 ### 🎯 Applications
