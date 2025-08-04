@@ -1,4 +1,4 @@
-## Uncertainty-Aware 3DGS-Based Pose Estimation
+## Uncertainty-Aware 3DGS-Based Pose Estimation for Underwater Robot
 
 ### Author
 [Yu Zhou](https://barryzhouyu.github.io/yuzhoubarry.github.io/)
@@ -8,7 +8,7 @@
 
 This repository contains the implementation for our paper:
 
-#### Topic: Uncertainty-Aware Active Perception with 3D Gaussian Splatting for Robot Pose Estimation 
+#### Topic: Uncertainty-aware 3D Gaussian Splatting (3DGS) based Pose Estimation for Underwater Vehicles 
 
 We propose an uncertainty-aware 3DGS framework that estimates pose-wise uncertainty via distributions over Gaussian parameters generated from the Variantional-3dgs model.
 
