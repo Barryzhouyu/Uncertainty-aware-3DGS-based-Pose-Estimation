@@ -1,11 +1,9 @@
 ## Uncertainty-Aware 3DGS-Based Pose Estimation
 
-Author
+## Author
+[Yu Zhou](https://barryzhouyu.github.io/yuzhoubarry.github.io/)
 
-Yu Zhou (Ph.D. Student, University of Notre Dame)
-
-This project builds upon the variational 3DGS model developed by Ruiqi Li.
-
+> This project builds upon the [variational 3DGS model](https://github.com/csrqli/variational-3dgs) developed by Ruiqi Li.
 ### 📌 Overview
 
 This repository contains the implementation for our paper:
