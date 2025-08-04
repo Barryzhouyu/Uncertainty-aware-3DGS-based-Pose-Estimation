@@ -1,6 +1,6 @@
 ## Uncertainty-Aware 3DGS-Based Pose Estimation
 
-## Author
+### Author
 [Yu Zhou](https://barryzhouyu.github.io/yuzhoubarry.github.io/)
 
 > This project builds upon the [variational 3DGS model](https://github.com/csrqli/variational-3dgs) developed by Ruiqi Li.
@@ -13,6 +13,8 @@ This repository contains the implementation for our paper:
 We propose a novel active perception pipeline that quantifies both epistemic and aleatoric uncertainty in 3D Gaussian Splatting (3DGS)-based pose estimation and leverages them for uncertainty-aware path planning in robot navigation. Unlike prior 3DGS methods that focus on rendering or localization alone, our approach enables robots to identify informative viewpoints for re-observation—without requiring real-time localization.
 
 #### Pose-wise Uncertainty Quantification
+
+An underwater robot estimates its pose by comparing a captured image to rendered images generated from the variantional 3DGS model. By sampling from learned variational distributions over Gaussian parameters (e.g., position, opacity, scale), we generate diverse renderings and obtain a distribution over the estimated pose to quantify uncertainty.
 
 <div align="center">
   <img width="600" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
