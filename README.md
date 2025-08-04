@@ -17,7 +17,7 @@ We propose an uncertainty-aware 3DGS framework that estimates pose-wise uncertai
 </div>
 
 ### 🔧 Results
-Comparison between ground truth views and rendered images from two scenes: one in a simulator and the other in an outdoor swimming pool.
+Comparison between test images captured by a BlueROV2 robot and rendered images from two scenes: one in the HoloOcean simulator and the other in an outdoor swimming pool.
 
 <div align="center">
 <img width="800" alt="rendering_result" src="https://github.com/user-attachments/assets/57b74968-47d8-4d49-89a6-e14640f8fe58" />
