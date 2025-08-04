@@ -16,7 +16,11 @@ We propose an uncertainty-aware 3DGS framework that estimates pose-wise uncertai
   <img width="600" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
 </div>
 
+### 🔧 Results
 
+<div align="center">
+<img width="800" alt="rendering_result" src="https://github.com/user-attachments/assets/57b74968-47d8-4d49-89a6-e14640f8fe58" />
+</div>
 
 ### 🎯 Applications
 	•	Uncertainty-aware visual pose estimation
