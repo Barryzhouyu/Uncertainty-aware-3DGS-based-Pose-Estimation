@@ -12,4 +12,5 @@ This project explores uncertainty-aware active perception for robot using 3D Gau
 
 
 
-<img width="500" alt="Pose_est" src="https://github.com/user-attachments/assets/e538fba7-57f5-411d-8d97-347adcbc72ca" />
+<img width="712" height="506" alt="pose_est" src="https://github.com/user-attachments/assets/75ac0b48-7da2-45e9-9395-65571a6c6f98" />
+
