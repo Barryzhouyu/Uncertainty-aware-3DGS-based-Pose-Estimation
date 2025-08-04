@@ -1,3 +1,6 @@
 [submodule "external/variational-3dgs"]
 	path = external/variational-3dgs
 	url = https://github.com/Barryzhouyu/variational-3dgs.git
+[submodule "variational-3dgs"]
+	path = variational-3dgs
+	url = https://github.com/Barryzhouyu/variational-3dgs.git
