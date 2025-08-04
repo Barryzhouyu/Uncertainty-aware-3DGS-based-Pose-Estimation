@@ -13,7 +13,7 @@ This repository contains the implementation for our paper:
 We propose an uncertainty-aware 3DGS framework that estimates pose-wise uncertainty via distributions over Gaussian parameters generated from the Variantional-3dgs model, enabling the AUV to identify areas of low confidence for potential revisitation or exploration.
 
 <div align="center">
-  <img width="500" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
+  <img width="540" alt="3dgs_flow_chart" src="https://github.com/user-attachments/assets/54507a79-4934-48d8-a02b-e1bf842bfec9" />
 </div>
 
 ### 🔧 Results
