@@ -1,4 +1,4 @@
-## ** Uncertainty-Aware 3DGS-Based Pose Estimation**
+## Uncertainty-Aware 3DGS-Based Pose Estimation
 
 Author
 
